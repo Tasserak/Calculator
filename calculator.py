@@ -6,7 +6,7 @@ def penambahan(a, b) :
 def pengurangan(a, b):
     return a - b
 
-def  perkalian(a, b):
+def perkalian(a, b):
     return a * b
 
 def pembagian(a, b):
@@ -31,36 +31,65 @@ def main():
         pilihan = input('Pilih Operasi(1-5): ')
 
         if pilihan == '1':
-            a = int(input('Masukkan angka: '))
-            b = int(input('Masukkan angka: '))
+            try:
+                a = float(input('Masukkan angka: '))
+                b = float(input('Masukkan angka: '))
+            except ValueError:
+                print('Input tidak valid! Masukkan angka.')
+
             hasil = penambahan(a,b)
             print(hasil)
-            riwayat.append(hasil)
-            print(riwayat)
+            riwayat.append(f'{a} + {b} = {hasil}')
+            print('\n----- Riwatat -----')
+            for x, y in enumerate(riwayat[-5:], 1):
+                print(f'{x}, {y}')
+
         elif pilihan == '2':
-            a = int(input('Masukkan angka: '))
-            b = int(input('Masukkan angka: '))
+            try:
+                a = float(input('Masukkan angka: '))
+                b = float(input('Masukkan angka: '))
+            except ValueError:
+                print('Input tidak valid! Masukkan angka.')
+
             hasil = pengurangan(a,b)
             print(hasil)
-            riwayat.append(hasil)
-            print(riwayat)
+            riwayat.append(f'{a} + {b} = {hasil}')
+            print('\n----- Riwatat -----')
+            for x, y in enumerate(riwayat[-5:], 1):
+                print(f'{x}, {y}')
+
         elif pilihan == '3':
-            a = int(input('Masukkan angka: '))
-            b = int(input('Masukkan angka: '))
+            try:
+                a = float(input('Masukkan angka: '))
+                b = float(input('Masukkan angka: '))
+            except ValueError:
+                print('Input tidak valid! Masukkan angka.')
+
             hasil = perkalian(a,b)
             print(hasil)
-            riwayat.append(hasil)
-            print(riwayat)
+            riwayat.append(f'{a} + {b} = {hasil}')
+            print('\n----- Riwatat -----')
+            for x, y in enumerate(riwayat[-5:], 1):
+                print(f'{x}, {y}')
+
         elif pilihan == '4':
-            a = int(input('Masukkan angka: '))
-            b = int(input('Masukkan angka: '))
+            try:
+                a = float(input('Masukkan angka: '))
+                b = float(input('Masukkan angka: '))
+            except ValueError:
+                print('Input tidak valid! Masukkan angka.')
+
             hasil = pembagian(a,b)
             print(hasil)
-            riwayat.append(hasil)
-            print(riwayat)
+            riwayat.append(f'{a} + {b} = {hasil}')
+            print('\n----- Riwatat -----')
+            for x, y in enumerate(riwayat[-5:], 1):
+                print(f'{x}, {y}')
+
         elif pilihan == '5':
             print('Terima Kasih')
             break
+
         else:
             print('Inputan tidak valid')
 

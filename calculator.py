@@ -36,11 +36,12 @@ def main():
                 b = float(input('Masukkan angka: '))
             except ValueError:
                 print('Input tidak valid! Masukkan angka.')
+                continue
 
             hasil = penambahan(a,b)
             print(hasil)
             riwayat.append(f'{a} + {b} = {hasil}')
-            print('\n----- Riwatat -----')
+            print('\n----- Riwayat -----')
             for x, y in enumerate(riwayat[-5:], 1):
                 print(f'{x}, {y}')
 
@@ -50,11 +51,12 @@ def main():
                 b = float(input('Masukkan angka: '))
             except ValueError:
                 print('Input tidak valid! Masukkan angka.')
+                continue
 
             hasil = pengurangan(a,b)
             print(hasil)
-            riwayat.append(f'{a} + {b} = {hasil}')
-            print('\n----- Riwatat -----')
+            riwayat.append(f'{a} - {b} = {hasil}')
+            print('\n----- Riwayat -----')
             for x, y in enumerate(riwayat[-5:], 1):
                 print(f'{x}, {y}')
 
@@ -64,11 +66,12 @@ def main():
                 b = float(input('Masukkan angka: '))
             except ValueError:
                 print('Input tidak valid! Masukkan angka.')
+                continue
 
             hasil = perkalian(a,b)
             print(hasil)
-            riwayat.append(f'{a} + {b} = {hasil}')
-            print('\n----- Riwatat -----')
+            riwayat.append(f'{a} * {b} = {hasil}')
+            print('\n----- Riwayat -----')
             for x, y in enumerate(riwayat[-5:], 1):
                 print(f'{x}, {y}')
 
@@ -78,11 +81,12 @@ def main():
                 b = float(input('Masukkan angka: '))
             except ValueError:
                 print('Input tidak valid! Masukkan angka.')
+                continue
 
             hasil = pembagian(a,b)
             print(hasil)
-            riwayat.append(f'{a} + {b} = {hasil}')
-            print('\n----- Riwatat -----')
+            riwayat.append(f'{a} / {b} = {hasil}')
+            print('\n----- Riwayat -----')
             for x, y in enumerate(riwayat[-5:], 1):
                 print(f'{x}, {y}')
 

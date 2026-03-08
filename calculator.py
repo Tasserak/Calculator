@@ -18,9 +18,9 @@ def pembagian(a, b):
 def menu():
     print('='*5,'Kalkulator','='*5)
     print('1, Penambahan')
-    print('2, Penguranngan')
+    print('2, Pengurangan')
     print('3, Perkalian')
-    print('4, Pengurangan')
+    print('4, Pembagian')
     print('5, Keluar')
 
 def main():
@@ -58,9 +58,11 @@ def main():
             print(hasil)
             riwayat.append(hasil)
             print(riwayat)
-        else:
+        elif pilihan == '5':
             print('Terima Kasih')
             break
+        else:
+            print('Inputan tidak valid')
 
     
 main()
